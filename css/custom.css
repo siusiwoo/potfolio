@@ -24,11 +24,22 @@
 /* 윈도우 사이즈 출력 */
 #resolution{position:fixed;left:50%;top:50%;transform:translate(-50%, -50%);font-size:60px;color:red;}
 
-header{border-bottom:1px solid #ccc;}
+a {
+    text-decoration: none;
+    /**/
+    display: block;
+    /**/
+    color: black;
+    /**/
+}
+
 #title{
     padding-left: 10px;
     
  
+}
+h1{
+    color: #003366;
 }
 #menu{
     display: flex;
@@ -48,8 +59,29 @@ li{
     padding-top:  15px;
     
 }
+
+.introduction:hover{
+    color: #ff6a6a;   
+}
+.diary:hover{
+    color: #ff6a6a;
+}
+.projects:hover{
+    color: #ff6a6a;
+}
+
+.helper:hover{
+    color: #ff6a6a;
+}
+.contact:hover{
+    color: #ff6a6a;
+}
+.title1:hover{
+    color: #ff6a6a;
+}
 .present{
     padding-top: 50px;
+    padding-left: 10%;
 }
 .face{
     padding-top: 50px;
@@ -125,7 +157,8 @@ b{
 header{
     width: 100%;
     height: 80px;
-    background-color: rgba(243, 243, 243, 0.8);
+    /* background-color: rgba(243, 243, 243, 0.8); */
+    background-color: transparent;
 
     display: flex;
     justify-content: center;
@@ -143,7 +176,7 @@ header{
     height: 950px;
 
 }
-#maintop{
+.maintop{
     text-align: center;
     font-size: 50px;
     margin-top: 80px;
@@ -189,13 +222,13 @@ header{
 .share{
     display: block;
     margin-top : 50px;
-    margin-left : 50px;
+    padding-left : 25%;
     color: white;
 }
 .share2{
     display: block;
     margin-top : 50px;
-    margin-left : 50px;
+    padding-left : 25%;
     color: white;
     font-size: 20px;
 }
@@ -225,7 +258,7 @@ header{
     
 }
 .pop{
-    padding-left: 30px;
+    padding-left: 150px;
 }
 
 .big1{
@@ -301,6 +334,75 @@ header{
     height: 350px;
     
 }
+
+
+.skills{
+    background-color: #eee; 
+    width: 100%;
+    height: 700px;
+   
+    padding-top: 100px;
+
+ }
+ .skills h2{
+     font-size: 40px;
+     color: #ff6a6a;
+ }
+ 
+ .skills .h1{
+     font-size: 50px;
+ }
+ .skills-inner{
+     width: 1200px;
+     height: 700px;
+     margin: 0 auto;
+ }
+ 
+ .skills .contents{
+     width: 1200px;
+     height: 300px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ 
+     margin-top: 50px;
+ }
+ .skills .contents li{
+     width: 350px;
+     height: 350px;
+     font-size: 20px;
+     text-align: center;
+     background-color: white;
+ 
+     padding: 20px;
+ 
+     transition: 0.3;
+ 
+ }
+ .skills h3{
+     font-size: 30px;
+     margin-bottom: 20px;
+ }
+ .skills i{
+     color: #ff6a6a;
+     font-size: 40px;
+ }
+ .skills .contents li:hover{
+     background-color: #ff6a6a;
+     color: white;
+     border-radius: 15px;
+ }
+ .skills .contents li:hover i{
+     color: white;
+ }
+ 
+
+
+
+
+
+
 .end{
     background-color : gray;
 }
+
