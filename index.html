@@ -23,7 +23,11 @@
         content="온다프로필, 온다자기소개, 미래유망, UI/UX 엔지니어, 온다쌤, DX/UX Plan · UI Design · AI · Visualizing Big Data · HTML · CSS · Javascript · Framework · Library · OA Master">
     <meta name="author" content="온다">
     <!-- //My meta tags : 개인별 메타태그  -->
-   
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -33,19 +37,18 @@
     <header>
         <div class="container-fluid px-0">
             <!-- h1/menu -->
-            <section class="container-sm px-0">
+            <section class="container px-0">
                 <div class="row g-0">
-                    <div class="col-6" id="title">
-
-                        <h1><a href="#title1" class="title1">미래유망 시우</a></h1>
+                    <div class="col-5" id="title">
+                        <h1 class="m-0 h-100 d-flex align-items-center"><a href="#title1" class="title1">미래유망 시우</a></h1>
                     </div>
-                    <div class="col-6" id="menu" >
+                    <div class="col-7 d-none d-md-flex justify-content-end" id="menu" >
                         <ul>
                             <li><a href="#introduction" class="introduction">소개</a></li>
                             <li><a href="#diary" class="diary">스킬</a></li>
                             <li><a href="#projects" class="projects">프로젝트</a></li>
-                            <li><a href="#helper" class="helper">학습도우미</a></li>
-                            <li><a href="#contact" class="contact">문의하기</a></li>
+                            <li><a href="#helper" class="helper">문의하기</a></li>
+                            <!-- <li><a href="#contact" class="contact">문의하기</a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -76,7 +79,7 @@
     <!-- contents Wrapper -->
     <div class="container-fluid bg-violet   px-0" id="introduction" >
         <!-- 서브비주얼영역 -->
-        <section class="container-sm px-0">
+        <section class="container">
             <div class="row g-0">
                 <div class="col-12 col-lg-8 bg-violet bg-opacity-50 text-black present"  >
                     <h3>시우</h3>
@@ -103,9 +106,9 @@
                         
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 bg-violet bg-opacity-50" id="imgwrap">
-                    <img src="./img/이시우_char.png" class="face">
-                    <div style="height:100px;"></div>
+                <div class="col-12 col-lg-4 bg-violet bg-opacity-50 " id="imgwrap">
+                    <img src="./img/이시우_char.png" class="face rounded shadow" width="200px">
+                    <!-- <div style="height:100px;"></div> -->
                 </div>
             </div>
         </section>
@@ -117,30 +120,27 @@
     <div class="container-fluid px-0">
         <!-- 이수과목영역 -->
         <section class="container-fluid px-0">
-            <div class="row g-0">
-                <div class="col-12 col-lg-6  bg-pink bg-gradient">
-                    <img src="./img/cccc 복사.png" id="phot">
-                    <div style="height:100px;"> </div>
+            <div class="row g-0 align-items-center bg-pink bg-gradient py-10">
+                <div class="col-12 col-lg-6">
+                    <img src="./img/cccc 복사.png" class="my-5" id="phot">
                 </div>
-                <div class="col-12 col-lg-6  bg-pink bg-gradient">
-
-                    <h1 class="art ">코드는 아이디어를 구현하는 도구이다.</h1><br><br>
+                <div class="col-12 col-lg-6">
+                    <h1 class="art" >코드는 아이디어를 구현하는 도구이다.</h1><br>
                     <h3 class="art2">C언어는 아이디어를 현실로 만드는 기반이다. <br> 사용자에게 좋은 경험을 제공하는 것이 내가 추구하는 목표다. </h3>
-
-                    <div style="height:100px;"></div>
                 </div>
-                <div class="col-12 col-lg-6 bg-navy">
+            </div>
+            <div class="row g-0 align-items-center bg-navy py-10">
+                <div class="col-12 col-lg-6">
                     <h1 class="share">공유와 협업의 가치</h1>
                     <h3 class="share2"> 사람과 사람 관계 사람과 기술 사이의 힘. <br> AI와 Tool이 만난 기술 그 기술을 넘어선 활용과 창조. </h3>
-                    <div style="height:100px;"></div>
                 </div>
-                <div class="col-12 col-lg-6 bg-navy">
-                    <img src="./img/figma_small.png" id="figma">
+                <div class="col-12 col-lg-6">
+                    <img src="./img/figma_small.png" class="my-5" id="figma">
                     <!-- <div style="height:100px;"></div> -->
                 </div>
-                <div class="col-12 standard">
-
-
+            </div>
+            <div class="row g-0">
+                <div class="col standard">
                     <p> 백엔드표준(backend Standard)<br>
                         기초를 단단하게. 사용성과 접근성을 유효하게, 바른 정보가 사용자에게 정확히 도착하게<br>
                         백엔드표준을 지키는 3대장 java, C, python와 늘 함께 합니다.
@@ -226,14 +226,14 @@
         <!-- //위대한 것은 시 - 비주얼영역 -->
     </div>
 
-
+    <div id="diary"></div>
     <div class="skills" id="skills">
         <div class="skills-inner">
 
             <h2>Skills</h2>
             <h1>What I Do</h1>
 
-            <ul class="contents" id="diary">
+            <ul class="contents" >
                 <li>
                     <h3><i class="fa-brands fa-html5 skillsHtml"></i> HTML</h3>
                     <p>HTML은 다양한 요소와 태그를 사용하여 텍스트, 이미지, 링크, 비디오 등 다양한 콘텐츠를 정의하며, 웹 브라우저가 이를 해석하여 사용자에게 시각적으로 표현합니다.</p>
@@ -252,6 +252,85 @@
             </ul>
         </div>
     </div>        
+
+     <div id="projects"></div>
+    <div class="skills project">
+        <div class="skills-inner">
+
+            <h2>project</h2>
+           
+
+            
+            <ul class="contents">
+                <li>
+                    <h3><i class="fa-brands fa-html5"></i> HTML</h3>
+                    <p>개인 포트폴리오 진행중</p>
+                    <img src="/img/html 포트폴리오.png" class="htmlProject">
+                </li>
+
+                <li>
+                    <h3><i class="fa-brands fa-css3-alt"></i> CSS</h3>
+                    <p>간단한 포트폴리오 레이아웃 </p>
+                    <img src="/img/cssproject.png" class="cssProject">
+                </li>
+
+                <li>
+                    <h3><i class="fa-regular fa-keyboard"></i> C++</h3>
+                    <p>재획 계산기 </p>
+                    <img src="/img/image.png" class="cProject">
+
+                </li>
+            </ul>
+        </div>
+
+
+        <div id="helper"></div>
+        <div class="contact" id="contact">
+            <h2>Contact</h2>
+            <h1>Contact With Me!</h1>
+
+            <div class="contents">
+                <div class="left">
+                    <div class="info">
+                        <h3>Phone Number</h3>
+                        <p>010-5354-9724</p>
+                    </div>
+
+                    <div class="info">
+                        <h3>Email</h3>
+                        <p>shshw3388@gmail.com</p>
+                    </div>
+                    <div class="info">
+                        <h3>Address</h3>
+                        <p>Seoul, Sillim 123-25</p>
+                    </div>
+
+
+                </div>
+                <div class="right">
+                    <p>name</p>
+                    <input type="text">
+                    <p>email</p>
+                    <input type="email">
+
+                    <p>memo</p>
+                    <textarea name="" id="">
+                        
+                    </textarea>
+                    <br>
+                    
+                    <button>sen</button>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+
 
 
 
